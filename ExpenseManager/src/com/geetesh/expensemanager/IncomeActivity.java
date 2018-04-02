@@ -58,7 +58,6 @@ public class IncomeActivity extends Activity {
             d1 += " " + c.getString(c.getColumnIndex("tdate")) + "\n";
             //p+=a1+"	"+b1+"	"+c1+"	"+d1+"\n";
             total += Integer.parseInt(e1);
-
         }
         a1 += "\n" + "Total:";
         b1 += "\n" + total + "";

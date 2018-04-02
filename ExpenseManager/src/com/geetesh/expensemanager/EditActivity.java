@@ -38,29 +38,19 @@ public class EditActivity extends Activity {
         spinner.setAdapter(adapter);
 
         rb = (RadioButton) findViewById(R.id.ch1);
-
-
         ed = (EditText) findViewById(R.id.price_message);
-
-
         cat = (Spinner) findViewById(R.id.categories_spinner);
-
-
         dt = (EditText) findViewById(R.id.date_message1);
-
-
         save1 = (Button) findViewById(R.id.sv);
         save1.setOnClickListener(new View.OnClickListener() {
-
 
             public void onClick(View arg0) {
                 String price1;
                 String type, ct1, date1;
 
-                if (rb.isChecked())
+                if (rb.isChecked()){
                     type = "Income";
-                else {
-
+                } else {
                     type = "Expense";
                 }
 
@@ -88,15 +78,10 @@ public class EditActivity extends Activity {
         });
     }
 
-
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-
-    {
+    public boolean onCreateOptionsMenu(Menu menu){
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.edit, menu);
         return true;
     }
-
-
 }

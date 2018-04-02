@@ -18,5 +18,4 @@ public class PendingActivity extends Activity {
         getMenuInflater().inflate(R.menu.pending, menu);
         return true;
     }
-
 }

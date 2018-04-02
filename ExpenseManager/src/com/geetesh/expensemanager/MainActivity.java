@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
                 Intent intent3 = new Intent(MainActivity.this, PendingActivity.class);
                 startActivity(intent3);
-
             }
         });
     }
@@ -56,5 +55,4 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
 }

@@ -19,7 +19,6 @@ public class HistoryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-
         Spinner spinner = (Spinner) findViewById(R.id.categories_spinner1);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -28,14 +27,12 @@ public class HistoryActivity extends Activity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
-
-        cat1 = (Spinner) findViewById(R.id.categories_spinner1);
+		cat1 = (Spinner) findViewById(R.id.categories_spinner1);
 
         final RadioButton rbch1, rbch2, rbch3;
         rbch1 = (RadioButton) findViewById(R.id.ch1);
         rbch2 = (RadioButton) findViewById(R.id.ch2);
         rbch3 = (RadioButton) findViewById(R.id.ch3);
-
 
         Button go1;
         go1 = (Button) findViewById(R.id.go);
@@ -59,8 +56,7 @@ public class HistoryActivity extends Activity {
                 startActivity(in);
             }
         });
-
-    }
+	}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
